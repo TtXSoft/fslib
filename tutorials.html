@@ -1,0 +1,71 @@
+<p><b><i><font face="Arial" size="6">fslib</font></i></b></p>
+<p><u><font face="Arial" size="5">Poradniki</font></u></p>
+<p><i><font face="Arial" size="4">Instalacja</font></i></p>
+<p><font face="Arial">Uruchamiamy konsolę w folderze z pobranym plikiem z działu 
+Pobieranie i wpisujemy:</font></p>
+<p><font face="Arial">pip install fslib-0.1.0-py3-none-any.whl</font></p>
+<p><i><font face="Arial" size="4">Tworzymy plik ini</font></i></p>
+<p><font face="Arial">Tworzymy nowy plik Pythona w dowolnym folderze i otwieramy 
+go w dowolnym edytorze.</font></p>
+<p><font face="Arial">Wpisujemy:</font></p>
+<p><font face="Arial">import fslib</font></p>
+<p><font face="Arial">Jest to import pakietu fslib</font></p>
+<p><font face="Arial">plik = fslib.files.INIFile('moj_plik_ini.ini')</font></p>
+<p><font face="Arial">Tutaj tworzymy obiekt klasy INIFile</font></p>
+<p><font face="Arial">plik.set_item('imie','Michal')</font></p>
+<p><font face="Arial">Teraz dodaliśmy do pliku moj_plik_ini.ini item o nazwie 
+imie z wartością Michal</font></p>
+<p><font face="Arial">print(plik.get_item('imie'))</font></p>
+<p><font face="Arial">Tą linijką wyświetlamy na ekranie wartość itemu imie z 
+pliku moj_plik_ini.ini</font></p>
+<p><font face="Arial">Rezultat:</font></p>
+<p><font face="Arial">-Uruchomienie pliku z kodem pythona-</font></p>
+<p><font face="Arial">Michal</font></p>
+<p><font face="Arial">----------------------------------------------------</font></p>
+<p><i><font face="Arial" size="4">Funkcja replace_sequence</font></i></p>
+<p><font face="Arial">Funkcja replace_sequence zamienia linijkę w pliku na inną.</font></p>
+<p><font face="Arial">-Plik pliczek.txt-----------</font></p>
+<p><font face="Arial">1</font></p>
+<p><font face="Arial">2</font></p>
+<p><font face="Arial">3</font></p>
+<p><font face="Arial">--------------------------------</font></p>
+<p><font face="Arial">Tworzymy nowy plik Pythona w dowolnym folderze i otwieramy 
+go w dowolnym edytorze.</font></p>
+<p><font face="Arial">Wpisujemy:</font></p>
+<p><font face="Arial">import fslib</font></p>
+<p><font face="Arial">Jest to import pakietu fslib</font></p>
+<p><font face="Arial">fslib.files.replace_sequence('pliczek.txt','2','4')</font></p>
+<p><font face="Arial">-Plik pliczek.txt po uruchomienu skryptu-</font></p>
+<p><font face="Arial">1</font></p>
+<p><font face="Arial">4</font></p>
+<p><font face="Arial">3</font></p>
+<p><font face="Arial">------------------------------------------------------</font></p>
+<p><i><font face="Arial" size="4">Funkcja remove_sequence</font></i></p>
+<p><font face="Arial">Funkcja remove_sequence usuwa linijkę z pliku</font></p>
+<p><font face="Arial">-Plik pliczek2.txt----------</font></p>
+<p><font face="Arial">Ala ma</font></p>
+<p><font face="Arial">X</font></p>
+<p><font face="Arial">kota</font></p>
+<p><font face="Arial">--------------------------------</font></p>
+<p><font face="Arial">Tworzymy nowy plik Pythona w dowolnym folderze i otwieramy 
+go w dowolnym edytorze.</font></p>
+<p><font face="Arial">Wpisujemy:</font></p>
+<p><font face="Arial">import fslib</font></p>
+<p><font face="Arial">Jest to import pakietu fslib</font></p>
+<p><font face="Arial">fslib.files.remove_sequence('pliczek2.txt','X')</font></p>
+<p><font face="Arial">-Plik pliczek2.txt po uruchomienu skryptu-</font></p>
+<p><font face="Arial">Ala ma</font></p>
+<p><font face="Arial">kota</font></p>
+<p><font face="Arial">---------------------------------------------------------</font></p>
+<p><i><font face="Arial" size="4">Funkcja remove_chars</font></i></p>
+<p><font face="Arial">Tworzymy nowy plik Pythona w dowolnym folderze i otwieramy 
+go w dowolnym edytorze.</font></p>
+<p><font face="Arial">Wpisujemy:</font></p>
+<p><font face="Arial">import fslib</font></p>
+<p><font face="Arial">Jest to import pakietu fslib</font></p>
+<p><font face="Arial">tekst = 'XCXZXEXSXCX'</font></p>
+<p><font face="Arial">print(fslib.strings.remove_chars(tekst,'X'))</font></p>
+<p><font face="Arial">Rezultat:</font></p>
+<p><font face="Arial">-Uruchomienie skryptu Pythona-</font></p>
+<p><font face="Arial">CZESC</font></p>
+<p><font face="Arial">-------------------------------------------</font></p>
